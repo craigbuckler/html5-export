@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+  <g class="highcharts-series-group">
+    <g class="highcharts-series highcharts-series-0" stroke="#FFF" stroke-linejoin="round">
+      <path fill="#50B432" d="M300 20a156 156 0 0 1 153.3 185L300 176z"/>
+      <path fill="#1b22ed" d="M453.3 205.2A156 156 0 1 1 299.8 20l.2 156z"/>
+    </g>
+  </g>
+  <g class="highcharts-data-labels highcharts-series-0">
+    <path fill="none" d="M448.3 57.4c-5 0-11.1 5.1-19.6 12.2l-8.5 7" stroke="#50B432"/>
+    <path fill="none" d="M151.7 294.6c5 0 11.1-5.1 19.6-12.2l8.5-7" stroke="#1b22ed"/>
+    <text x="5" y="15" text-rendering="geometricprecision" transform="translate(453 47)" cursor="pointer">
+      <tspan>28% sponsorship</tspan>
+    </text>
+    <text x="5" y="15" text-rendering="geometricprecision" transform="translate(51 285)" cursor="pointer">
+      <tspan>72% ticket sales</tspan>
+    </text>
+  </g>
+</svg>
