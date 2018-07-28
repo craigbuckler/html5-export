@@ -4,18 +4,18 @@
 
 My name's Craig Buckler
 I'm a freelance full-stack developer
-But I won't see any self-promotion in this presentation
+But you won't see any self-promotion or subliminal advertising in this presentation
 
 PDFs yeah - fresh tech!
 They've only been around 25 years.
-I'll keep you excited by dropping in references to Blockchain and serverless every few minutes.
+I'll keep you excited by dropping in references to Blockchain and serverless every couple of minutes.
 
 ## Talk background
 
 How did this come about?
-I recently created a web application for one of my clients
+I've been working on web application for one of my clients
 It's nothing revolutionary: usual stuff
-They add data which their customers can interact with
+They add data and their customers can interact with it
 Those customers can then run reports and get all sorts of amazing business insights
 
 I was smuggly satisfied with the system
@@ -23,15 +23,15 @@ But they contacted me last year to say they were spending several days each mont
 Why? The information they were sending was available at all times via a click or two
 I am crap at marketing
 
-I am not a typical user. Nor are you. We're all curious about technology. If we find something out, we go looking.
+I am not a typical user. Nor are you. We're all curious about technology. If we want to find out something, we go looking.
 
 Normal people aren't like that. They like to be told stuff. These customers wanted to be emailed a monthly summary because they were far too busy to log in and spend five minutes thinking for themselves.
 
-It was also an opportunity to remind clients that they're getting a useful service for their money even if they don't use it daily.
+It was also an opportunity to remind clients that they're getting a useful service for their money even if they didn't use the system daily.
 
 So my next question was: how are you producing these reports?
 Well, we access the web system reports and grab screenshots. OK...
-Then we paste them into PowerPoint. PowerPoint? Not Excel or anything useful?
+Then we paste them into PowerPoint. PowerPoint? Not Excel or anything practical?
 Then we export a PDF.
 The quality could be awful and the file sizes were huge.
 
@@ -47,7 +47,7 @@ That works, but control is more limited than office documents. You couldn't, for
 
 2. Use a PDF library to draw directly on to a document.
 
-Effectively, you're positioning text and lines on paper. It's hard work do to anything complex. I tried several libraries to convert tables and SVGs; it was difficult and the results were variable.
+This is flexible because you're positioning text and lines on paper. It's hard work do to anything complex. I tried several libraries to convert tables and SVGs; it was difficult and the results were variable.
 
 Little choice between these two extremes.
 
@@ -55,9 +55,9 @@ Little choice between these two extremes.
 
 Why am I converting one document format to another?
 
-Am I producing a PDF because that's what I've been told to do rather than because it's the best option?
+Am I producing a PDF because that's what I've been told to do rather than because it's the best solution?
 
-Reports are being produced in HTML so couldn't I just send clients HTML documents instead?
+Reports are being produced in HTML so couldn't I just send clients an HTML document instead?
 
 HTML advantages:
 * all OSes have a browser - even if there's no PDF reader
@@ -79,26 +79,26 @@ If I could offer these in an HTML file which could be emailed, it would be easie
 
 This last point got the most push-back from the client. Surely users expect PDFs?
 
-I'll be honest with you: most users rarely know or care what type of file they're receiving. But I had to prove HTML documents would be no more effort to distribute and open.
+Let's face it: most users rarely know or care what type of file they're receiving. But I had to prove HTML documents would be no more effort to distribute and open.
 
 
 ## Solution
 
-* create a web page which can download itself
+* create a web page preview which could download itself
 * allow basic editing before the document is output
 * make it look like a paged document
 * do not use any online assets: all CSS and images must be inlined
 * use OS fonts
 * do not distribute JavaScript. JS can be used to create and download the HTML, but the final distributed document will not contain JS. That avoids security issues when sending via email or other means.
-* make it printer-friendly. It doesn't need to be as good as a native PDF, but it should print nicely.
+* make it printer-friendly. It didn't need to be as good as a native PDF, but it should print nicely.
 
 Has this been attempted before?
 
-Most of you will be too young to remember MHTML?
+Do any of you remember MHTML? Most of you will be far too young.
 
-MIME Encapsulation of Aggregate HTML Documents. Content of an MHTML file is encoded the same as HTML email message. Web users often used it in the 1990s to download web pages for offline use after waiting 20 minutes for it to download on a 56K modem.
+MIME Encapsulation of Aggregate HTML Documents. Content of an MHTML file is encoded the same as HTML email message. In the 1990s, web users often used it to download web pages over 56K modems for offline use rather tying up the phone line while they read it.
 
-Unfortunately, not all browsers support it and the format has largely fallen out of favour.
+Unfortunately, not all browsers support MHTML and the format has largely fallen from favour.
 
 ## Step 1: preview and download
 
@@ -123,7 +123,7 @@ It won't download anything at the moment, so let's write some JavaScript to fix 
 
 So we have an event handler which intercepts the click, extracts all the content using innerHTML and pops it into the downloads href as a data URI.
 
-I'm also passing the data to an encode function to strip comments, unnecessary whitespace and any JavaScript code. Unfortunately, this doesn't work in Edge or IE but the downloaded document is fine.
+I'm also passing the data to an encode function to strip comments, unnecessary whitespace and any JavaScript code. Unfortunately, this doesn't work in Edge or IE but the downloaded document can be viewed in those browsers.
 
 Let's now preview and save.
 We have a document we can open in any browser.
@@ -179,9 +179,9 @@ We have all the benefits of HTML plus those of PDFs. It works in all browsers. I
 
 It's not really read-only but neither are PDFs when it comes to that. The code is minified so it's damn difficult to edit. If you're concerned, consider adding a hash to the content somewhere so you can prove a document has been tampered with.
 
-Finally, user expectations. This was the biggest unknown for me but, so far, they love it. Similar documents have been sent to more than one hundred people and none of them have experienced problems despite a wide variety of email systems and browsers.
+Finally, user expectations. This was the biggest unknown for me but, so far, they love it. Similar documents have been sent to several hundred people and none of them have experienced problems despite a wide variety of email systems and browsers.
 
-In fact, some have even being demanding monthly reports before the month has finished so the data isn't complete. Which is obviously mad, but there you go.
+In fact, some have even being demanding monthly reports before the month has finished so the data isn't complete. Which is obviously bonkers, but there you go.
 
 This example code is all on GitHub. You can adapt it for your own purposes and are very welcome to hire me should you need something more sophisticated!
 
