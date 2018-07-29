@@ -10,6 +10,16 @@ PDFs yeah - fresh tech!
 They've only been around 25 years.
 I'll keep you excited by dropping in references to Blockchain and serverless every couple of minutes.
 
+PDF advantages:
+* free, open software (of variable quality)
+* preview before saving
+* easy to distribute (no security implications)
+* works offline
+* prints well
+* read-only (to a point)
+* users expect it
+
+
 ## Talk background
 
 How did this come about?
@@ -66,14 +76,6 @@ HTML advantages:
 * copy/paste is often better
 * it's accessible and works with screen readers
 
-PDF advantages:
-* free, open software (of variable quality)
-* preview before saving
-* easy to distribute (no security implications)
-* works offline
-* prints well
-* read-only (to a point)
-* users expect it
 
 If I could offer these in an HTML file which could be emailed, it would be easier to develop and considerably more useful to users.
 
@@ -89,7 +91,7 @@ Let's face it: most users rarely know or care what type of file they're receivin
 * make it look like a paged document
 * do not use any online assets: all CSS and images must be inlined
 * use OS fonts
-* do not distribute JavaScript. JS can be used to create and download the HTML, but the final distributed document will not contain JS. That avoids security issues when sending via email or other means.
+* do not distribute JavaScript. JS can be used to create and download the HTML, but the final distributed document will not contain JS. That avoids security issues when sending via email or other means. (But Craig, I use React or Vue or Svelte - doesn't matter)
 * make it printer-friendly. It didn't need to be as good as a native PDF, but it should print nicely.
 
 Has this been attempted before?
