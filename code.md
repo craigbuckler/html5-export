@@ -47,13 +47,14 @@ This forces the browser to download a file rather than render it.
 You typically use it for images or PDFs, but it can be anything.
 
 The `href` normally points at URL.
-But we can also embed a data URI. And it's that which will contain the HTML for our exported report.
+But we can also embed a data URI. And that's how the HTML from this preview will be exported into another file.
 
-So that's the basis of this whole project.
+That's the basis of this whole project.
 One line of code stretched into a 20 minute presentation!
 
 OK, so it's not quite one line.
 
+1. We have a few styles so the icon's fixed to the top-left of the page.
 1. We need a JavaScript event handler to intercept a click on this icon.
 1. The handler extracts all the content within the `<head>` and `<main>` tags using `innerHTML`.
 1. It then puts that code into the link's `href` attribute as a data URI.
