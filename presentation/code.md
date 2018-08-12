@@ -6,7 +6,7 @@ Is anyone using VS Code now?
 I asked a year ago and got some blank looks.
 
 You'll be pleased to hear I won't be live editing.
-There's not enough time. And it terrifies me.
+There's not enough time. And I'm a coward.
 
 
 ## PREVIEW 0
@@ -97,6 +97,7 @@ which snaps slides to the viewport as they move closer to the edge.
 That's only supported in Firefox but other browsers are coming.
 
 Next, we can make any HTML tag editable by simply adding a `contenteditable` attribute.
+That can then be removed with regular expressions when the document is saved.
 
 So let's see what we've got.
 
