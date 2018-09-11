@@ -2,9 +2,6 @@
 
 So let's look at the basic page in VS code.
 
-Is anyone using VS Code now?
-I asked a year ago and got some blank looks.
-
 You'll be pleased to hear I won't be live editing.
 There's not enough time. And I'm a coward.
 

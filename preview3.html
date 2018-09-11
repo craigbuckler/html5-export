@@ -93,6 +93,7 @@ img, svg {
 /* pages/slides */
 body {
   counter-reset: slide;
+  scroll-snap-type: y proximity;
   scroll-snap-type: proximity;
 }
 
@@ -110,6 +111,9 @@ article {
   border: 1px solid var(--col-text);
   box-shadow: 0 3px 6px rgba(0,0,0,0.5);
   z-index: 0;
+  scroll-margin-top: 4vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   scroll-snap-coordinate: 0% -4vh;
 }
 
