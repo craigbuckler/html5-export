@@ -36,6 +36,12 @@ Serves the correct MIME type and defaults to index.html
 
   // new server
   http.createServer((req, res) => {
+    if (path.normalize(decodeURI(uri)) !== decodeURI(uri)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
+  
 
     let
       uri = url.parse(req.url).pathname,
